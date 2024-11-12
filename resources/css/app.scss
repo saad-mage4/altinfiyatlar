@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+// .container {
+//     @apply max-w-screen-2xl;
+// }
+
+// ::selection {
+//     @apply text-black bg-yellow-500;
+// }
+
+// body {
+//     @apply font-sans;
+//     font-family: "Inter", sans-serif;
+//     /* Add this if you want to keep using Inter font */
+// }
+
+// .bg-custom-dark {
+//     @apply bg-gray-900;
+// }
+
+// /* Dark Theme */
+// body.dark_theme {
+//     @apply bg-gray-900;
+
+//     .addsTable-main-wrapper {
+//         @apply bg-gray-900;
+
+//         table {
+//             & *:not(span) {
+//                 @apply text-white bg-gray-900;
+//             }
+
+//             span {
+
+//                 h4,
+//                 p,
+//                 i {
+//                     @apply text-white bg-transparent;
+//                 }
+//             }
+//         }
+
+//         .black-inn-wrap {
+//             @apply bg-white;
+
+//             h3 {
+//                 @apply text-black;
+//             }
+//         }
+
+//         .row {
+//             >div.middle-col {
+//                 .black-box-col {
+//                     .select-dd-wrap {
+//                         .drop-down {
+//                             @apply text-white bg-gray-900;
+
+
+//                             select {
+//                                 background-image: url(/resources/js/images/drop-down-white.svg);
+//                                 /* Custom image */
+//                             }
+//                         }
+//                     }
+
+//                     .black-bg-head {
+//                         @apply text-white;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     .country-est-list span {
+//         @apply text-white;
+//     }
+
+//     .goldPricesNews * {
+//         @apply text-white bg-gray-900;
+//     }
+
+//     .new-container-main *:not(a.post-link) {
+//         @apply text-white;
+//     }
+// }
+
+// body.dark_theme .black-bg-head {
+//     @apply text-white;
+// }
+
+// /* Not Login Page */
+// .not-login-page {
+//     @apply bg-gray-900;
+
+//     .form-wrap {
+//         @apply bg-gray-800;
+
+//         form {
+
+//             label,
+//             a.underline {
+//                 /* Tailwind already defaults text to gray */
+//             }
+
+//             input {
+//                 @apply bg-transparent border-gray-500 accent-yellow-500 focus:outline-none focus:ring-0;
+
+//                 &:focus {
+//                     @apply shadow-none outline-none;
+//                 }
+//             }
+
+//             button,
+//             a:not(a.underline) {
+//                 @apply text-black bg-yellow-500;
+//             }
+//         }
+//     }
+// }
+
+// /* Profile Image */
+// .profile-img-main {
+//     @apply border rounded-full w-9 h-9;
+// }
+
+// .img-uploader-wrap {
+//     @apply relative w-auto;
+
+//     img#img-preview {
+//         @apply object-cover w-32 h-32 rounded-full;
+//     }
+
+//     #img-file-input {
+//         @apply hidden;
+//     }
+
+//     label.uploader-btn {
+//         @apply cursor-pointer rounded-full bg-yellow-500 text-black w-12 h-12 flex justify-center items-center absolute right-[-10px] bottom-5 font-semibold;
+//     }
+// }
+
+// /* Show Articles Page */
+// .show_articles {
+//     .content {
+//         @apply min-h-[380px] rounded-md shadow-md;
+
+//         .img {
+//             @apply flex items-center justify-center h-52;
+
+//             img {
+//                 @apply w-full h-full rounded-t-md;
+//             }
+//         }
+
+//         .text {
+//             p {
+//                 @apply line-clamp-3;
+//             }
+
+//             .article-link:hover {
+//                 @apply text-yellow-500;
+//             }
+//         }
+//     }
+// }

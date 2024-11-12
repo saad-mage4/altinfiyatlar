@@ -1,0 +1,27 @@
+.gold-guide {
+    h4 {
+        text-decoration: underline;
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .accordion-item {
+        .collapse.show {
+            visibility: visible;
+        }
+        &:first-of-type,
+        &:last-of-type {
+            border-radius: 5px;
+            overflow: hidden;
+            button {
+                color: #a9a9a9;
+            }
+        }
+        &:focus {
+            box-shadow: none;
+        }
+        &:not(:first-of-type) {
+            border-top: var(--bs-accordion-border-width) solid
+                var(--bs-accordion-border-color);
+        }
+    }
+}

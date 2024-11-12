@@ -1,0 +1,173 @@
+.main-nav {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    .col-logo {
+        a {
+            img {
+                height: 60px;
+                width: 200px;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .col-logo {
+            order: -1;
+            margin-bottom: 20px;
+        }
+        .col-right {
+            order: -1;
+            justify-content: flex-end !important;
+            margin-bottom: 20px;
+            .nav-right-col {
+                gap: 15px !important;
+                span#curr-time {
+                    font-size: 20px !important;
+                }
+            }
+        }
+    }
+    .container {
+        .row {
+            form {
+                input.form-control {
+                    border-color: #848e9c;
+                    background-color: transparent;
+                    border-width: 2px;
+                    height: 57px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 20px;
+                    color: #fff;
+                    &::placeholder {
+                        color: #848e9c;
+                    }
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+            div {
+                .nav-right-col {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 40px;
+                    .nav-acc-info {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                    }
+                    span#curr-time {
+                        display: flex;
+                        gap: 4px;
+                        color: #fff;
+                        font-size: 22px;
+                        font-weight: 600;
+                        // font-family: ;
+                        width: 112px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-content {
+    background-color: #1e2328 !important;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 400px;
+    // padding: 15px;
+    margin: auto;
+}
+
+.form-signin .checkbox {
+    font-weight: 500;
+    color: #fff;
+    accent-color: #f0b90b;
+}
+
+.form-signin .form-floating {
+    margin-bottom: 20px;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    // border-bottom-right-radius: 0;
+    // border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    // border-top-left-radius: 0;
+    // border-top-right-radius: 0;
+}
+
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+    color: #1e2328;
+    transform: scale(0.85) translateY(-1.5rem) translateX(0.4rem);
+    letter-spacing: 0.5px;
+    &::after {
+        background-color: #f0b90b;
+    }
+}
+
+.modal-header {
+    color: #fff;
+}
+button.btn-close {
+    color: #fff;
+    background: #f0b90b var(--bs-btn-close-bg) center/1em auto no-repeat;
+}
+.form-signin button[type="submit"] {
+    background-color: #f0b90b;
+    border: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translate(-50%, -70%);
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    position: absolute;
+}
+
+.modal.show .modal-dialog {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+}
+
+button.dark-mode {
+    background-color: transparent;
+    border: none;
+}
+
+.modal-backdrop {
+    z-index: 5 !important;
+}
